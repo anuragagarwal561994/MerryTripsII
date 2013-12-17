@@ -1,0 +1,203 @@
+/*Fonts*/
+@font-face {
+  font-family: "Bebas";
+  font-style: normal;
+  src: url(../fonts/bebas.ttf);
+  font-family: "Gill Light";
+  font-style: normal;
+  src: url("../fonts/Gill Sans MT Light.ttf");
+}
+
+html{
+	min-width: 320px;
+}
+body{       
+    margin: 0px;
+	background: -webkit-linear-gradient(90deg, rgb(245,246,246) 50%, transparent 26%);
+	background: -moz-linear-gradient(90deg, rgb(245,246,246) 50%, transparent 26%);    
+	background: -o-linear-gradient(90deg, rgb(245,246,246) 50%, transparent 26%);
+	background: -ms-linear-gradient(90deg, rgb(245,246,246) 50%, transparent 26%);
+	background: linear-gradient(90deg, rgb(245,246,246) 50%, transparent 26%);
+	
+	-webkit-background-size: 61px 61px;
+	-moz-background-size: 61px 61px;
+	background-size: 61px 61px;
+	background-color: rgb(255,255,255);
+}
+a:hover{
+	text-decoration: none;
+}
+
+/*Header and Footer*/
+#header{
+	background:url('../images/banner strip 1.png') repeat-x;
+	background-size:contain;
+	min-width: 320px;
+}
+#logo-container{
+	display: inline-block;
+	width: 14%;
+}
+#logo{
+	width: 100%;
+}
+ul#navigation{
+	padding:0%;
+	padding-left:5%;
+	position:relative;
+	width:90%;
+	margin:auto;
+	list-style:none;
+	background:url('../images/ribbon.png') no-repeat center;
+	background-size:contain;
+}
+ul#navigation li{
+	display: inline-block;
+	font-family:'Bebas';
+	width:13%;
+	text-align:center;
+	margin-top: 3.5em;
+}
+ul#navigation li a{
+	color:white;
+}
+#footer{
+	background: -webkit-linear-gradient(90deg, rgb(66,66,66) 50%, transparent 26%);
+	background: -moz-linear-gradient(90deg, rgb(66,66,66) 50%, transparent 26%);    
+	background: -o-linear-gradient(90deg, rgb(66,66,66) 50%, transparent 26%);
+	background: -ms-linear-gradient(90deg, rgb(66,66,66) 50%, transparent 26%);
+	background: linear-gradient(90deg, rgb(66,66,66) 50%, transparent 26%);
+	
+	-webkit-background-size: 61px 61px;
+	-moz-background-size: 61px 61px;
+	background-size: 61px 61px;
+	background-color: rgb(59,61,58);
+}
+
+.container{
+	font-family: 'Gill Light';
+	color: black;
+}
+.row{
+	min-width: 320px;
+}
+.section-heading{
+	background-color: rgb(46,76,52);
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	color: rgb(255, 251, 237);
+}
+.section{
+	background-color: rgb(217, 219, 218);
+	padding:2% 0.5%;
+}
+.spacing-between-fields{
+	padding-top: 3%;
+}
+.heading{
+	font-family: "Bebas";
+}
+
+.form-control:-moz-placeholder {
+  color: black;
+}
+.form-control::-moz-placeholder {
+  color: black;
+}
+.form-control:-ms-input-placeholder {
+  color: black;
+}
+.form-control::-webkit-input-placeholder {
+  color: black;
+}
+.form-control{
+	font-size: 1.15em;
+	color:black;
+}
+.styled-select{
+	background:url('../images/select arrow.png') right no-repeat white;
+	background-size: contain;
+}
+select{
+	letter-spacing: 2px;
+	-moz-appearance:none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	appearance: none;
+	-webkit-appearance:none;
+}
+input[type="button"]{
+	background-color: rgb(114,114,112);
+	color: white;
+}
+.input-label{
+	text-align:right;
+	padding:0.3em 0em;
+	font-size:1.2em;
+}
+.left{
+	text-align:left;
+}
+.input{
+	padding-left:0px;
+}
+.pad-left{
+	padding-left:15px;
+}
+.pad-right{
+	padding-right:15px;
+}
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 690px){
+	#header{
+		background: rgb(66,66,66);
+		text-align: center;
+	}
+	ul#navigation{
+		width: 100%;
+		background: rgb(66,66,66);
+		padding: 0px;
+		top:0px;
+	}
+	ul#navigation li{
+		margin-top: 0px;
+	}
+	ul#navigation li:nth-child(odd){
+		background: rgb(44,44,44);
+	}
+	ul#navigation li:nth-child(even){
+		background: rgb(55,55,55);
+	}
+}
+@media screen and (max-width: 690px) and (orientation:portrait){	
+	#logo-container{
+		display: block;
+		width: 100%;
+		position:absolute;
+		top:2%;
+	}
+	#logo{
+		width: 30%;
+	}
+	ul#navigation{
+		padding-top:32%;
+		padding-bottom:2%;
+	}
+	ul#navigation li{
+		width: 15%;
+	}
+}
+@media screen and (max-width:690px) and (orientation:landscape){
+	#logo-container{
+		width: 15%;
+	}
+	#logo{
+		margin:10% 0%;
+	}
+	ul#navigation li{
+		width: 12%;
+	}
+}

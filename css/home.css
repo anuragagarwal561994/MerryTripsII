@@ -1,0 +1,27 @@
+@media screen and (max-width: 1200px){
+	#home-container{
+		width: 97%;
+	}
+}
+@media screen and (max-width:991px){
+	#home-container .input-label, 
+	#home-container .input{
+		text-align: left;
+		padding-left:15px;
+	}
+	#home-container .spacing-between-fields{
+		padding-top:0px;
+	}
+	#home-container .col-md-offset-2.input{
+		padding-top:1.8em;
+	}
+	#home-container .section-heading{
+		padding:1.5% 15px;
+	}
+	.checkbox{
+		font-size:1.1em;
+	}
+}
+*{
+	/*border:1px solid red;*/
+}

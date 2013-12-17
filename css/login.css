@@ -1,0 +1,12 @@
+@font-face{
+  font-family: 'facebook font';
+  font-style: normal;
+  src: url(../fonts/facebolf.otf);
+}
+a{
+	text-decoration: underline;
+}
+p
+{
+	margin-top: 3%;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>Merry Trips</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/bootstrap.css" media="screen"/>
+		<link rel="stylesheet" href="css/style.css" media="screen"/>
+		<link rel="stylesheet" href="css/home.css" media="screen"/>
+	</head> 
+	<body>
+		<nav id="header" class="navbar-fixed-top">
+			<ul id="navigation">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Book</a></li>
+				<div id="logo-container"><img id='logo' src="images/logo.png"></div>
+				<li><a href="#">Working</a></li>
+				<li><a href="#">Search</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="container" id="home-container">
+			<div class="row">
+				<div class="col-md-3 section-heading heading">
+					Find A Ride
+				</div>
+			</div>
+			<div class="row section">
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-12">
+							<select class="styled-select form-control"><option>I am looking for a guest</option></select>
+						</div>
+					</div>
+					<div class="row spacing-between-fields">
+						<div class="col-xs-4 input-label left pad-left pad-right">I am a:</div>
+						<div class="col-xs-4 input-label left"><input type="checkbox">&nbsp;Driver</div>
+						<div class="col-xs-4 input-label left"><input type="checkbox">&nbsp;Passenger</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-2 input-label pad-left left">
+							from:&nbsp;
+						</div>
+						<div class="col-md-10 input">
+							<select class="styled-select form-control"><option>select start destination</option></select>
+						</div>
+					</div>
+					<div class="row spacing-between-fields">
+						<div class="col-md-4 input-label pad-left left">
+							traveling on:&nbsp;&nbsp;
+						</div>
+						<div class="col-md-8 input">
+							<select class="styled-select form-control"><option>select date</option></select>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-2 input-label">
+							to:&nbsp;
+						</div>
+						<div class="col-md-10 input">
+							<select class="styled-select form-control"><option>select end destination</option></select>
+						</div>
+					</div>
+					<div class="row spacing-between-fields">
+						<div class="col-md-10 col-md-offset-2 input">
+							<input type="button" class="form-control" value="advanced search">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer" class="navbar-fixed-bottom">
+		</div>
+		<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

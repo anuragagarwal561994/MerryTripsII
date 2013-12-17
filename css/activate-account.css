@@ -1,0 +1,13 @@
+#activate-account-container .section-heading{
+	 display:inline-block;
+	 padding:1% 40px 1% 15px;
+}
+#activate-account-container .section{
+	padding: 5% 7%;
+}
+#activate-account-container{
+	width: 35%;
+}
+#activate-account-container .form-control{
+	font-size: 1.3em;
+}
