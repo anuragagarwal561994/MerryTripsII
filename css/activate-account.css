@@ -1,13 +1,43 @@
-#activate-account-container .section-heading{
-	 display:inline-block;
-	 padding:1% 40px 1% 15px;
-}
-#activate-account-container .section{
-	padding: 5% 7%;
-}
-#activate-account-container{
+.container{
 	width: 35%;
 }
-#activate-account-container .form-control{
-	font-size: 1.3em;
+.section{
+	padding: 5% 7%;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width:1200px){
+	.container{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 850px){
+	.container{
+		width: 70%;
+	}
+}
+@media screen and (max-width:690px){
+	.container{
+		width: 100%;
+	}
+}
+@media screen and (max-width:450px){
+	.section-heading{
+		padding:1.5% 15px;
+	}
+	.section-heading,.col-xs-4,.col-xs-6,.col-xs-8{
+		width: 100%;
+	}
+	.no-left-pad{
+		padding-left:15px;
+	}
+	.input-label{
+		text-align: left;
+		padding-left: 5%;
+	}
+	.col-xs-6{
+		padding-left:5%;
+		margin: auto;
+	}
 }

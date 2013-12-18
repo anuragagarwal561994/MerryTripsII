@@ -1,27 +1,63 @@
+*{
+	/*border:1px solid red;*/
+}
+.experience-section{
+	border-radius:5px;
+	height:70px;
+}
+.date{
+	display:inline-block;
+	background:rgb(91,91,91);
+	color:white;
+	font-family:'Bebas';
+	line-height:1.05;
+	padding:2px 5px;
+}
+.day{
+	font-size:3em;
+}
+.display-pic{
+	max-width:100%;
+}
+.passenger-detail{
+	background:rgb(235,237,236);
+	padding:2%;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.name{
+	font-size:1.6em;
+}
+.experience{
+	background:rgb(235,237,236);
+	font-size:1.6em;
+	padding:0.5% 3%;
+	overflow:auto;
+}
+
+/*Media Queries*/
+
 @media screen and (max-width: 1200px){
-	#home-container{
+	.container{
 		width: 97%;
 	}
 }
 @media screen and (max-width:991px){
-	#home-container .input-label, 
-	#home-container .input{
+	.input-label, .no-left-pad{
 		text-align: left;
 		padding-left:15px;
 	}
-	#home-container .spacing-between-fields{
+	.spacing-between-fields{
 		padding-top:0px;
 	}
-	#home-container .col-md-offset-2.input{
+	.col-md-offset-2.input{
 		padding-top:1.8em;
 	}
-	#home-container .section-heading{
+	.section-heading{
 		padding:1.5% 15px;
 	}
 	.checkbox{
 		font-size:1.1em;
 	}
-}
-*{
-	/*border:1px solid red;*/
 }

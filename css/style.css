@@ -42,8 +42,7 @@ a:hover{
 	width: 100%;
 }
 ul#navigation{
-	padding:0%;
-	padding-left:5%;
+	padding:0% 0% 0% 5%;
 	position:relative;
 	width:90%;
 	margin:auto;
@@ -83,8 +82,8 @@ ul#navigation li a{
 }
 .section-heading{
 	background-color: rgb(46,76,52);
-	font-size: 1.2em;
 	letter-spacing: 1px;
+	padding:0.5% 15px;
 	color: rgb(255, 251, 237);
 }
 .section{
@@ -93,9 +92,6 @@ ul#navigation li a{
 }
 .spacing-between-fields{
 	padding-top: 3%;
-}
-.heading{
-	font-family: "Bebas";
 }
 
 .form-control:-moz-placeholder {
@@ -131,15 +127,13 @@ input[type="button"]{
 	color: white;
 }
 .input-label{
-	text-align:right;
 	padding:0.3em 0em;
-	font-size:1.2em;
 }
-.left{
-	text-align:left;
+.right{
+	text-align:right;
 }
-.input{
-	padding-left:0px;
+.center{
+	text-align:center;
 }
 .pad-left{
 	padding-left:15px;
@@ -147,7 +141,24 @@ input[type="button"]{
 .pad-right{
 	padding-right:15px;
 }
-
+.no-right-pad{
+	padding-right:0px;
+}
+.no-left-pad{
+	padding-left:0px;
+}
+.no-pad{
+	padding:0px;
+}
+.small-font{
+	font-size:1.2em;
+}
+.row-gap{
+	margin-top:2%;
+}
+.beba-font{
+	font-family: 'Bebas';
+}
 
 /*Media Queries*/
 
