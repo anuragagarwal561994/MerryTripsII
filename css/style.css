@@ -43,7 +43,6 @@ a:hover{
 }
 ul#navigation{
 	padding:0% 0% 0% 5%;
-	position:relative;
 	width:90%;
 	margin:auto;
 	list-style:none;
@@ -158,6 +157,12 @@ input[type="button"]{
 }
 .beba-font{
 	font-family: 'Bebas';
+}
+.relative{
+	position: relative;
+}
+.absolute{
+	position: absolute;
 }
 
 /*Media Queries*/
