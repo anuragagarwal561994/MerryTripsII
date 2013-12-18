@@ -164,6 +164,12 @@ input[type="button"]{
 .absolute{
 	position: absolute;
 }
+.bottom{
+	bottom:0px;
+}
+.hide-overflow{
+	overflow: hidden;
+}
 
 /*Media Queries*/
 

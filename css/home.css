@@ -1,16 +1,23 @@
-.experience-section div,
-.experience-section img{
+.sub-section div,
+.sub-section img{
 	border-radius:5px;
 	height:70px;
+	background:rgb(235,237,236);
 }
 .date div{
 	display:inline-block;
-	background:rgb(91,91,91);
+	background:rgb(1,120,226);
 	color:white;
 	font-family:'Bebas';
 	line-height:1.05;
 	padding:2px 5px;
 	width: 70px;
+}
+.date-width{
+	width: 85px;
+}
+.section-spacing{
+	padding-right:30px;
 }
 .day{
 	font-size:3em;
@@ -19,7 +26,6 @@
 	max-width:100%;
 }
 .passenger-detail div{
-	background:rgb(235,237,236);
 	padding:2%;
 	overflow:hidden;
 	white-space:nowrap;
@@ -29,13 +35,36 @@
 	font-size:1.6em;
 }
 .experience div{
-	background:rgb(235,237,236);
 	font-size:1.6em;
 	padding:0.5% 3%;
 	overflow:auto;
 }
+.experience{
+
+}
+.trip-detail{
+	width:30%;
+	height:70px;
+	color:white;
+	font-size:0.99em;
+}
+.trip-detail div{
+	background:rgb(91,91,91);
+	border-radius:5px;
+	padding:3% 0%;
+}
 .vertical-space{
-	margin-top:10px;
+	margin-top:15px;
+}
+.display-pic2{
+	height: 70px;
+	float: left;
+}
+.trip-status{
+	color:white;
+	font-size:0.83em;
+	border-radius:0px 0px 5px 5px;
+	padding:2%;
 }
 #read-more{
 	left:0px;
@@ -78,11 +107,25 @@
 		padding-right:0px;
 		width:65%;
 	}
+	.trip-status{
+		padding: 1% 0 0 0;
+		font-size: 1em;
+	}
+	.departure{
+		width: 95%;
+	}
+	.trip-detail div{
+		padding:2%;
+	}
+	.section-spacing{
+		padding-right: 15px;
+	}
+	#trips-available{
+		margin-top:2%;
+	}
 }
 @media screen and (max-width: 768px){
-	.date,
-	.passenger-detail,
-	.experience{
+	.sub-section{
 		width: 100%;
 	}
 	.no-right-pad{
@@ -104,6 +147,26 @@
 	}
 	.experience div{
 		border-radius: 0px 0px 5px 5px;
+	}
+	.passenger{
+		padding: 2% 15px;
+	}
+	.trip-status{
+		padding: 0.5%;
+	}
+	.trip-detail{
+		width: 100%;
+		height: auto;
+	}
+	.departure{
+		bottom: auto;
+		position: relative;
+		width: 100%;
+		margin-top: 1%;
+	}
+	.trip-detail div{
+		padding: 0.5%;
+		font-size: 1.3em;
 	}
 }
 *{
