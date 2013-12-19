@@ -8,6 +8,10 @@ var fitThings = function(){
 	$('.container').css('margin-top', (condition?$('#logo').height()+parseInt($('#navigation').css('top')):$('#header').height())+30);
 	$('#footer').css('height', $('#header').height()/4);
 	$('.container').css('padding-bottom', $('#footer').height()+30);
+	if($(window).width()>991){
+		// $('#green-member').css('height', parseInt($('#login').css('height')));
+		// $('#blue-member').css('height', parseInt($('#note').css('height')));	
+	}
 }
 $(document).ready(function(){
 	fitThings();

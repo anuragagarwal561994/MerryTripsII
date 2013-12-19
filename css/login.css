@@ -43,6 +43,17 @@ p
 	color:rgb(92,94,93);
 	border:2px solid rgb(92,94,93);
 }
+#or{
+	display:inline-block;
+	border-radius:100%;
+	padding:0.7% 1%;
+	left:47.4%;
+	position:absolute;
+	top:50%;
+	border:2px solid rgb(92,94,93);
+	color:rgb(92,94,93);
+	background-color:rgb(235,237,236);
+}
 #login{
 	padding:4% 15px;
 }
@@ -57,6 +68,54 @@ p
 }
 .uniform-padding{
 	padding: 0.32em;
+}
+#note{
+	width:68%;
+	margin-right:0.5%;
+	display:inline-block;
+	background-color:rgb(248,242,226);
+	padding:1.5% 1% 3% 1%;
+	border-radius:5px;
+}
+.heading{
+	color:white;
+	padding:0.5% 1%;
+	font-size:1.5em;
+}
+#blue-member{
+	width:30%;
+	margin-left:0.5%;
+	display:inline-block;
+	border-radius:5px;
+	background-color:rgb(184,203,207);
+	padding:1.5% 1% 2.2% 1%;
+}
+#note-heading{
+	width:23%;
+	background-color:rgb(227,30,37);
+}
+#blue-member-heading{
+	width:100%;
+	background-color:rgb(5,158,225);
+}
+#facebook{
+	background-color: rgb(79, 129,188);
+	margin:10%;
+	color:white;
+	font-size:2em;
+}
+#facebook span{
+	font-family: 'facebook font';
+}
+p:first-child{
+	margin-top:0px;
+}
+#note-message{
+	margin-top:1%;
+	padding:1%;
+}
+#second-div{
+	padding:1.5%;
 }
 /*Media Queries*/
 @media screen and (max-width: 1200px){
@@ -137,6 +196,24 @@ p
 	#alert-message input{
 		margin-top: 2%;
 	}
-*{
-	/*border: 1px solid red;*/
+	#second-div{
+		margin-top:2%;
+		padding:3%;
+	}
+	#note, #blue-member{
+		width: 100%;
+		padding: 3%;
+	}
+	#blue-member-heading{
+		width: auto;
+	}
+	#note-heading{
+		width: 50%;
+	}
+	#facebook, #blue-member-heading, ul{
+		margin:3%;
+	}
+	#or{
+		display: none;
+	}
 }
