@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="height:100%;">
+<html>
 	<head> 
 		<title>Merry Trips</title> 
 		
@@ -9,32 +9,20 @@
 		<link rel="stylesheet" href="css/login.css" media="screen"/>
 		<link rel="stylesheet" href="css/media-queries.css" media="screen" />
 	</head> 
-	<body style="height: 100%;">
-		<!-- <div class="header navbar-fixed-top">
-		</div> -->
-		<div class="container" style="font-family:'Gill Light'">
+	<body>
+		<nav id="header" class="navbar-fixed-top">
+			<ul id="navigation" class="relative">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Book</a></li>
+				<div id="logo-container"><img id='logo' src="images/logo.png"></div>
+				<li><a href="#">Working</a></li>
+				<li><a href="#">Search</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<!-- <div class="container">
 			<div class="row">
-				<div class="col-xs-6 section" style="width:49%;display:inline-block;">
-					<div class="row">
-						<div class="col-xs-4" style="padding: 0.5em 0em;text-align:right;">login id:&nbsp;</div>
-						<div class="col-xs-8" style="padding:0px;"><input class="form-control" placeholder="enter email address" type="email"></div>
-					</div>
-					<div class="row">
-						<div class="col-xs-4" style="padding: 0.5em 0em;text-align:right;">password:&nbsp;</div>
-						<div class="col-xs-8" style="padding:0px;"><input class="form-control" placeholder="password" type="password"></div>
-					</div>
-					<div class="row">
-						<div class="col-xs-8 col-xs-offset-4" style="padding:0px;font-size:0.9em;"><input type="checkbox">remember password | forgot password?</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-8 col-xs-offset-4">
-							<div class="row">
-								<div class="col-xs-4" style="padding:0px;border-radius: 3px;"><input type="button" class="form-control" style="color:white;background-color:rgb(182, 75, 39);font-size:1.2em;" value="login"></div>
-								<div class="col-xs-4" style="padding:0px;margin-left:2%;border-radius: 3px;"><input type="button" class="form-control" style="color:white;background-color:rgb(182, 75, 39);font-size:1.2em;" value="sign up"></div>
-							</div>
-						</div>
-					</div>
-				</div>
 				<div style="display:inline-block;border-radius:100%;font-family:'Bebas';padding:0.7% 1%;z-index:10;position:absolute;left:48.4%;top:5%;border:2px solid rgb(182, 75, 39);color:rgb(182, 75, 39);background-color:rgb(246,226,181);">OR
 				</div>
 				<div class="section pull-right" style="width:49%;display:inline-block;">
@@ -73,9 +61,77 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- <div class="footer navbar-fixed-bottom">
 		</div> -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 section-spacing">
+					<div class="row">
+						<div class="col-md-5 section-heading small-font beba-font">
+							Login
+						</div>
+					</div>
+					<div class="row section">
+						<div class="col-md-12" id="login">
+							<div class="row">
+								<div class="col-md-3 input-label small-font right">login id:&nbsp;</div>
+								<div class="col-md-8 no-left-pad"><input type="email" class="form-control small-font" placeholder="enter email address"></div>
+							</div>
+							<div class="row row-gap">
+								<div class="col-md-3 input-label small-font right">password:&nbsp;</div>
+								<div class="col-md-8 no-left-pad"><input type="password" class="form-control small-font" placeholder="password"></div>
+							</div>
+							<div class="row">
+								<div class="col-md-offset-3 col-md-8 input-label small-font">
+									<input type="checkbox">&nbsp;remember password | <a href="#">forgot password?</a>
+								</div>		
+							</div>
+							<div class="row">
+								<div class="col-md-offset-3 col-md-7 input-label small-font buttons">
+									<div class="col-md-5 no-left-pad"><input type="button" class="form-control" value="login"></div>
+									<div class="col-md-5 no-left-pad"><input type="button" class="form-control" value="sign up"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 gap-section">
+					<div class="row">
+						<div class="col-md-12 section-heading small-font beba-font">
+							Register As A Green Member. Its Free And Simple
+						</div>
+					</div>
+					<div class="row section">
+						<div class="col-md-12" id="green-member">
+							<div class="row">
+								<div class="col-md-2 input-label small-font">Name:&nbsp;</div>
+								<div class="col-md-8 no-left-pad"><input type="email" class="form-control small-font" placeholder="enter email address"></div>
+							</div>
+							<div class="row row-gap">
+								<div class="col-md-2 input-label small-font">Email:&nbsp;</div>
+								<div class="col-md-4 no-pad" id="company-email"><input type="name" class="form-control small-font" placeholder="company email"></div>
+								<div class="col-md-1 small-font at-the-rate">@</div>
+								<div class="col-md-5 no-pad" id="company-id"><select class="styled-select form-control small-font"><option>company.com</option></select></div>
+							</div>
+							<div class="row">
+								<div class="col-md-5 col-md-offset-7 no-left-pad smaller-font">your company not on list?</div>
+							</div>
+							<div class="row">
+								<div class="col-md-2 input-label small-font">Contact:&nbsp;</div>
+								<div class="col-md-4 no-pad" id="mobile-number"><input type="name" class="form-control small-font" placeholder="enter mobile no."></div>
+								<div class="col-md-5 col-md-offset-1 no-pad" id="gender"><select class="styled-select form-control small-font"><option>gender</option></select></div>
+							</div>
+							<div class="row row-gap" id="alert-message">
+								<div class="center beba-font small-font" id="alert"><b>!</b></div>
+								<div class="col-md-9 small-font uniform-padding">Privileges of being a Green Member</div>
+								<div class="col-md-2 no-pad"><input type="button" class="form-control" value="sign-up"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer" class="navbar-fixed-bottom">
+		</div>
 		<script src="js/jquery-1.10.2.js"></script>	
 		<script src="js/main.js"></script>
 	</body>

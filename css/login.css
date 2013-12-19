@@ -3,10 +3,140 @@
   font-style: normal;
   src: url(../fonts/facebolf.otf);
 }
-a{
+/*a{
 	text-decoration: underline;
+}*/
+a{
+	color:black;
+}
+.form-control:-moz-placeholder {
+  color: rgb(203,203,203);
+}
+
+.form-control::-moz-placeholder {
+  color: rgb(203,203,203);
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: rgb(203,203,203);
+}
+
+.form-control::-webkit-input-placeholder {
+  color: rgb(203,203,203);
+}
+.form-control{
+	color: rgb(203,203,203);	
 }
 p
 {
 	margin-top: 3%;
+}
+#alert{
+	float:left;
+	width:2em;
+	height:2em;
+	border-radius:100%;
+	background:rgb(235,237,236);
+	padding:0.1em;
+	display:inline-block;
+	color:rgb(92,94,93);
+	border:2px solid rgb(92,94,93);
+}
+#login{
+	padding:4% 15px;
+}
+#green-member{
+	padding:4.3% 30px 0% 30px;
+}
+.at-the-rate{
+	padding:0.32em 15px;
+}
+.smaller-font{
+	font-size:0.9em;
+}
+.uniform-padding{
+	padding: 0.32em;
+}
+/*Media Queries*/
+@media screen and (max-width: 1200px){
+	#green-member{
+		padding:4% 30px 0% 30px;
+	}
+	.at-the-rate{
+		padding: 0.32em 10px;
+	}
+}
+@media screen and (max-width: 991px){
+	.no-right-pad{
+		padding-right: 15px;
+	}
+	.input-label, .no-left-pad{
+		text-align: left;
+		padding-left:15px;
+	}
+	.buttons{
+		padding-left: 0px;
+	}
+	.section-spacing{
+		padding-right:15px;
+	}
+	#login{
+		padding:0px 15px;
+	}
+	.buttons div{
+		width: 40%;display: inline-block;
+		padding-right:0px;
+	}
+	.gap-section{
+		margin-top:2%;
+	}
+	#green-member{
+		padding:0px 15px;
+	}
+	.row-gap{
+		margin-top:0px;
+	}
+	.no-pad{
+		padding-left:15px;
+		padding-right:15px;
+	}
+	#alert{
+		margin-left:15px;
+	}
+	#company-email{
+		width:45%;
+		display: inline-block;
+		padding-right: 0px;
+	}
+	.at-the-rate{
+		padding: 0.32em 0.2em;
+		display: inline-block;
+		width: 1%;
+		position: absolute;
+	}
+	#company-id{
+		width:55%;
+		display: inline-block;
+		position: absolute;
+		padding-left: 1.5em;
+	}
+	.form-control{
+		font-size: 1.1em;
+	}
+	.smaller-font{
+		text-align: right;
+		font-size: 1em;
+	}
+	#mobile-number, #gender{
+		margin:1% 0%;
+	}
+	#alert-message{
+		margin-top:3%;
+	}
+	#alert-message input{
+		margin-top: 2%;
+	}
+*{
+	/*border: 1px solid red;*/
 }

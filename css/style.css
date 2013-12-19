@@ -170,6 +170,9 @@ input[type="button"]{
 .hide-overflow{
 	overflow: hidden;
 }
+.section-spacing{
+	padding-right:30px;
+}
 
 /*Media Queries*/
 
