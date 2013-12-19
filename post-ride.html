@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="height:100%;">
+<html>
 	<head> 
 		<title>Merry Trips</title> 
 		
@@ -11,7 +11,7 @@
 	</head> 
 	<body>
 		<nav id="header" class="navbar-fixed-top">
-			<ul id="navigation">
+			<ul id="navigation" class="relative">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Book</a></li>
@@ -20,177 +20,126 @@
 				<li><a href="#">Search</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
+			<div class="beba-font" id="login-link"><a href="#">Login</a> &nbsp;|&nbsp; <a href="#">Sign-Up</a></div>
 		</nav>
-		<div class="container" style="font-family:'Gill Light'">
+		<div class="container">
 			<div class="row">
-				<div class="col-xs-3 section-heading heading" style="font-size:1.5em;">Post &nbsp;A &nbsp;Ride</div>
+				<div class="col-md-3 section-heading beba-font small-font">Post &nbsp;A &nbsp;Ride</div>
 			</div>
-			<div class="row section">
-				<div class="col-xs-6">
+			<div class="row section relative">
+				<div class="col-md-6" id="first-column">
 					<div class="row">
-						<div class="col-xs-12 form-heading heading">Place*</div>
+						<div class="col-md-12 form-heading beba-font">Place*</div>
 					</div>
 					<div class="row">
-						<div style="padding-right:0px;width:45%;padding-left:15px;display:inline-block;float:left;">
-							<select class="form-control">
-								<option>start destination</option>
-							</select>
-						</div>
-						<div class="col-xs-1" style="font-size:1.5em;padding:0.1em 0em;text-align:center;display:inline-block;">to</div>
-						<div style="padding-left:0px;padding-right:15px;width:45%;display:inline-block;">
-							<select class="form-control">
-								<option>end destination</option>
-							</select>
-						</div>
+						<div class="pad-left input pull-left"><select class="form-control styled-select"><option>start destination</option></select></div>
+						<div class="col-md-1 center small-font" id="to">to</div>
+						<div class="pad-right input"><select class="form-control styled-select"><option>end destination</option></select></div>
 					</div>
 					<div class="row">
-						<div style="padding-right:0px;width:45%;padding-left:15px;display:inline-block;float:left;">
-							<select class="form-control">
-								<option>add pickup point</option>
-							</select>
+						<div class="pad-left input pull-left"><select class="form-control styled-select"><option>add pickup point</option></select></div>
+						<div class="col-md-offset-1 pad-right input"><select class="form-control styled-select"><option>add drop point</option></select></div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-12 form-heading beba-font">Route*</div>
+					</div>
+					<div class="row">
+						<div class="pad-left pull-left input"><input type="name" placeholder="city/town name" class="form-control"></div>
+						<div class="col-md-offset-1 pad-right input"><input type="checkbox">Allow booking till this location</div>
+					</div>
+					<div class="row">
+						<div class="pad-left pull-left input"><select class="form-control styled-select"><option>add city/town</option></select></div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-6 form-heading beba-font">Journey &nbsp;Date*</div>
+						<div class="col-md-6 form-heading beba-font">Time &nbsp;of &nbsp;Departure*</div>
+					</div>
+					<div class="row">
+						<div class="pad-left input pull-left"><select class="form-control styled-select"><option>select journey date</option></select>
 						</div>
-						<div class="col-xs-offset-1" style="padding-left:0px;padding-right:15px;width:45%;display:inline-block;">
-							<select class="form-control">
-								<option>add drop point</option>
-							</select>
+						<div class="col-md-offset-1 no-pad input">
+							<div class="col-md-4 no-pad"><select class="form-control styled-select"><option>hrs.</option></select></div>
+							<div class="col-md-4 no-pad"><select class="form-control styled-select"><option>min.</option></select></div>
+							<div class="col-md-4 no-pad"><select class="form-control styled-select"><option>AM</option></select></div>
 						</div>
 					</div>
 					<hr>
 					<div class="row">
-						<div class="col-xs-12 form-heading heading">Route*</div>
+						<div class="col-md-12 form-heading beba-font">Trip &nbsp;Type*</div>
 					</div>
 					<div class="row">
-						<div style="padding-right:0px;width:45%;padding-left:15px;display:inline-block;float:left;">
-							<input type="name" placeholder="city/town name" class="form-control">
-						</div>
-						<div class="col-xs-offset-1" style="padding-left:0px;padding-right:15px;width:45%;display:inline-block;">
-							<input type="checkbox">Allow booking till this location
-						</div>
-					</div>
-					<div class="row">
-						<div style="padding-right:0px;width:45%;padding-left:15px;display:inline-block;float:left;">
-							<input type="name" placeholder="add city/town" class="form-control">
-						</div>
-					</div>
-					<hr>
-					<div class="row">
-						<div class="col-xs-6 form-heading heading">Journey &nbsp;Date*</div>
-						<div class="col-xs-6 form-heading heading">Time &nbsp;of &nbsp;Departure*</div>
-					</div>
-					<div class="row">
-						<div style="padding-right:0px;width:45%;padding-left:15px;display:inline-block;float:left;">
-							<select class="form-control">
-								<option>select journey date</option>
-							</select>
-						</div>
-						<div class="col-xs-offset-1" style="padding-left:0px;padding-right:15px;width:45%;display:inline-block;">
-							<input type="time" class="form-control">
-						</div>
-					</div>
-					<hr>
-					<div class="row">
-						<div class="col-xs-12 form-heading heading">Trip &nbsp;Type*</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-9">
-							<div class="row">
-								<div class="col-xs-12"><b>Paid Trip Posting</b></div>
+						<div class="col-md-9 no-right-pad">
+							<div class="col-md-12" id="trip-type"><b>Paid Trip Posting</b><br>
+								<div class="col-md-6 no-left-pad right trip-types"><input type="checkbox">&nbsp;Confirmed Trip<br><a href="#">know more</a></div>
+								<div class="col-md-6 no-pad right pull-right trip-types" ><input type="checkbox">&nbsp;Travel only if full trip<br><a href="#">know more</a></div>						
 							</div>
-							<div class="row">
-								<div class="col-xs-6" style="font-size:1.65em;padding-right:0px;"><input type="checkbox">Confirmed Trip</div>
-								<div class="col-xs-6" style="font-size:1.3em;padding:0.2em 0px 0.2em 15px;"><input type="checkbox">Travel only if full trip</div>
-							</div>							
-							<div class="row">
-								<div class="col-xs-6" style="text-align:right">know more</div>
-								<div class="col-xs-6" style="text-align:right">know more</div>
-							</div>							
 						</div>
-						<div class="col-xs-3">
-							<div class="row" style="font-size:1.65em;padding-top:1.2em;">
-								<div class="col-xs-12">
-									<input type="checkbox">Free Trip
-								</div>
+						<div class="col-md-3 no-pad">
+							<div class="col-md-12 no-right-pad">&nbsp;<br>
+								<div class="col-md-12 no-pad right trip-types"><input type="checkbox">&nbsp;Free Trip<br><a href="#">know more</a></div>
 							</div>
-							<div class="row">
-								<div class="col-xs-12" style="text-align:right">know more</div>
-							</div>						
+						</div>
+
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-6 form-heading beba-font">Number &nbsp;of &nbsp;Seats*</div>
+						<div class="col-md-6 form-heading beba-font">Fare &nbsp;per &nbsp;Seat*</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5"><input type="number" class="form-control" placeholder="seats available"></div>
+						<div class="col-md-5 col-md-offset-1"><input type="number" class="form-control" placeholder="enter amount"></div>
+						<div class="col-md-1 no-pad" id="rs">&#8377;</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-12 form-heading beba-font">Vehicle &nbsp;Information*</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2" id="vehicle-info">
+							<div class="row small-font">Vehicle:</div>
+							<div class="row small-font">Vehicle No.:</div>
+							<div class="row small-font">Colour:</div>
+						</div>
+						<div class="col-md-10">
+							<div class="row pad-right pad-left"><select class="form-control styled-select input"><option>brand</option></select></div>
+							<div class="row pad-right pad-left" id="vehicle-number">	
+								<input type="text" class="form-control inline">
+								<input type="text" class="form-control inline">
+								<input type="text" class="form-control inline">
+							</div>
+							<div class="row pad-right pad-left">
+								<input type="text" class="form-control input" placeholder="enter colour">
+							</div>
 						</div>
 					</div>
 					<hr>
 					<div class="row">
-						<div class="col-xs-6 form-heading heading">Number &nbsp;of &nbsp;Seats*</div>
-						<div class="col-xs-6 form-heading heading">Fare &nbsp;per &nbsp;Seat*</div>
+						<div class="col-md-12 form-heading beba-font">Preferences</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-5">
-							<input type="number" class="form-control" placeholder="seats available">
+						<div class="col-md-12 small-font">
+							<input type="checkbox">&nbsp;Allow only <u>Green Guests</u> to book.<br>
+							<input type="checkbox">&nbsp;Allow <u>Green Guests</u> to book for friends and families.<br>
+							<input type="checkbox">&nbsp;Allow guests to book only after I approve them<br>
+							<input type="checkbox">&nbsp;Allow only guests of a particular gender to book
 						</div>
-						<div class="col-xs-5 col-xs-offset-1">
-							<input type="number" class="form-control" placeholder="enter amount">
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-12 form-heading beba-font">Additional &nbsp;Preferences</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 small-font">
+							<input type="checkbox">&nbsp;Smoking inside car is not allowed<br>
+							<input type="checkbox">&nbsp;Drinking during the trip is not allowed
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-6">
-					<div class="row">
-						<div class="col-xs-12 form-heading heading">Vehicle &nbsp;Information*</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-3">
-							<div class="row">
-								<div class="col-xs-12" style="font-size:1.5em;padding:0.19em 15px 0em;">Vehicle:</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12" style="font-size:1.5em;padding:0.19em 15px 0em;">Vehicle No.:</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12" style="font-size:1.5em;padding:0.19em 15px 0em;">Colour:</div>
-							</div>
-						</div>
-						<div class="col-xs-9">
-							<div class="row">
-								<div class="col-xs-12">
-									<select class="form-control" style="width:50%;">
-										<option>brand</option>
-									</select>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12" style="font-size:1.5em">
-									<input type="text" class="form-control" style="width:30%;display:inline-block;">
-									<input type="text" class="form-control" style="width:15%;display:inline-block;">
-									<input type="text" class="form-control" style="width:30%;display:inline-block;">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12">
-									<input type="text" class="form-control" style="width:50%;display:inline-block;" placeholder="enter colour">
-								</div>
-							</div>
-						</div>
-					</div>
-					<hr>
-					<div class="row">
-						<div class="col-xs-12 form-heading heading">Preferences</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12" style="font-size:1.5em">
-							<input type="checkbox">Allow only <u>Green Guests</u> to book.<br>
-							<input type="checkbox">Allow <u>Green Guests</u> to book for friends and families.<br>
-							<input type="checkbox">Allow guests to book only after I approve them<br>
-							<input type="checkbox">Allow only guests of a particular gender to book
-						</div>
-					</div>
-					<hr>
-					<div class="row">
-						<div class="col-xs-12 form-heading heading">Additional &nbsp;Preferences</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12" style="font-size:1.5em">
-							<input type="checkbox">Smoking inside car is not allowed<br>
-							<input type="checkbox">Drinking during the trip is not allowed
-						</div>
-					</div>
-				</div>
+				<div class="absolute" id="post-ride"><a href="#"><u>preview information</u></a>&nbsp;<input type="button" class="form-control inline auto" value="post ride"></div>
 			</div>
 		</div>
 		<div id="footer" class="navbar-fixed-bottom">

@@ -2,6 +2,49 @@
 	color: rgb(46,76,52);
 	font-size: 1.5em;
 }
-/**{
-	border: 2px solid red;
-}*/
+.input{
+	width:45%;
+	display: inline-block;
+}
+#to{
+	padding:0.32em 0em;
+	display:inline-block;
+}
+#trip-type{
+	background:rgb(181,181,181);
+	border-radius:5px;
+	color: rgb(46,76,52);
+}
+.trip-types{
+	color: rgb(46,76,52);	
+	width:auto;
+	font-size:1.1em;
+}
+.trip-types a{
+	font-size: 0.8em;
+}
+#vehicle-info div{
+	padding:0.32em 15px;
+}
+#rs{
+	color:rgb(46,76,52);
+	font-size:2em;
+}
+.inline{
+	display: inline-block;
+}
+#vehicle-number input:nth-child(odd){
+	width: 30%;
+}
+#vehicle-number input:nth-child(even){
+	width: 15%;
+}
+#first-column{
+	border-right:3px solid rgb(91,91,91);
+}
+hr{
+	border:1px solid grey;
+}
+*{
+	/*border: 2px solid red;*/
+}
