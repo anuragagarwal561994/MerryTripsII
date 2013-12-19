@@ -62,7 +62,7 @@
 }
 .trip-status{
 	color:white;
-	font-size:0.83em;
+	font-size:0.8em;
 	border-radius:0px 0px 5px 5px;
 	padding:2%;
 }
@@ -131,6 +131,9 @@
 	.no-right-pad{
 		padding-right: 15px;
 	}
+	.recent-trips .date{
+		padding:0px;
+	}
 	.date div{
 		width: 100%;
 		border-radius: 5px 5px 0px 0px;
@@ -150,6 +153,7 @@
 	}
 	.passenger{
 		padding: 2% 15px;
+		background:rgb(235,237,236);
 	}
 	.trip-status{
 		padding: 0.5%;
@@ -157,6 +161,9 @@
 	.trip-detail{
 		width: 100%;
 		height: auto;
+		background: rgb(235,237,236);
+		padding-bottom: 2%;
+		border-radius: 0px 0px 5px 5px;
 	}
 	.departure{
 		bottom: auto;
@@ -167,6 +174,9 @@
 	.trip-detail div{
 		padding: 0.5%;
 		font-size: 1.3em;
+	}
+	.recent-trips{
+		padding:0px 15px;
 	}
 }
 *{
