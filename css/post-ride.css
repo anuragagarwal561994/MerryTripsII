@@ -105,6 +105,19 @@ hr{
 		width: 100%;
 	}
 }
-*{
-	/*border: 2px solid red;*/
+.form-control:-moz-placeholder {
+  color: rgb(203,203,203);
+}
+
+.form-control::-moz-placeholder {
+  color: rgb(203,203,203);
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: rgb(203,203,203);
+}
+
+.form-control::-webkit-input-placeholder {
+  color: rgb(203,203,203);
 }
