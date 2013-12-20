@@ -24,104 +24,121 @@
 		</nav>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3 section-heading beba-font small-font">Post &nbsp;A &nbsp;Ride</div>
+				<div class="col-sm-3 section-heading beba-font small-font">Post &nbsp;A &nbsp;Ride</div>
 			</div>
 			<div class="row section relative">
-				<div class="col-md-6" id="first-column">
+				<div class="col-sm-6" id="firs1t-column">
 					<div class="row">
-						<div class="col-md-12 form-heading beba-font">Place*</div>
-					</div>
-					<div class="row">
-						<div class="pad-left input pull-left"><select class="form-control styled-select"><option>start destination</option></select></div>
-						<div class="col-md-1 center small-font" id="to">to</div>
-						<div class="pad-right input"><select class="form-control styled-select"><option>end destination</option></select></div>
-					</div>
-					<div class="row">
-						<div class="pad-left input pull-left"><select class="form-control styled-select"><option>add pickup point</option></select></div>
-						<div class="col-md-offset-1 pad-right input"><select class="form-control styled-select"><option>add drop point</option></select></div>
-					</div>
-					<hr>
-					<div class="row">
-						<div class="col-md-12 form-heading beba-font">Route*</div>
-					</div>
-					<div class="row">
-						<div class="pad-left pull-left input"><input type="name" placeholder="city/town name" class="form-control"></div>
-						<div class="col-md-offset-1 pad-right input"><input type="checkbox">Allow booking till this location</div>
-					</div>
-					<div class="row">
-						<div class="pad-left pull-left input"><select class="form-control styled-select"><option>add city/town</option></select></div>
-					</div>
-					<hr>
-					<div class="row">
-						<div class="col-md-6 form-heading beba-font">Journey &nbsp;Date*</div>
-						<div class="col-md-6 form-heading beba-font">Time &nbsp;of &nbsp;Departure*</div>
-					</div>
-					<div class="row">
-						<div class="pad-left input pull-left"><select class="form-control styled-select"><option>select journey date</option></select>
-						</div>
-						<div class="col-md-offset-1 no-pad input">
-							<div class="col-md-4 no-pad"><select class="form-control styled-select"><option>hrs.</option></select></div>
-							<div class="col-md-4 no-pad"><select class="form-control styled-select"><option>min.</option></select></div>
-							<div class="col-md-4 no-pad"><select class="form-control styled-select"><option>AM</option></select></div>
-						</div>
-					</div>
-					<hr>
-					<div class="row">
-						<div class="col-md-12 form-heading beba-font">Trip &nbsp;Type*</div>
-					</div>
-					<div class="row">
-						<div class="col-md-9 no-right-pad">
-							<div class="col-md-12" id="trip-type"><b>Paid Trip Posting</b><br>
-								<div class="col-md-6 no-left-pad right trip-types"><input type="checkbox">&nbsp;Confirmed Trip<br><a href="#">know more</a></div>
-								<div class="col-md-6 no-pad right pull-right trip-types" ><input type="checkbox">&nbsp;Travel only if full trip<br><a href="#">know more</a></div>						
+						<div class="col-sm-12 form-heading beba-font">Place*</div>
+						<div class="row pad-left">
+							<div class="col-xs-6 no-right-pad input">
+								<select class="form-control styled-select"><option>start destination</option></select>
+							</div>
+							<div class="col-xs-1 small-font center input-label">to</div>
+							<div class="col-xs-6 no-left-pad input">
+								<select class="form-control styled-select"><option>end destination</option></select>
 							</div>
 						</div>
-						<div class="col-md-3 no-pad">
-							<div class="col-md-12 no-right-pad">&nbsp;<br>
-								<div class="col-md-12 no-pad right trip-types"><input type="checkbox">&nbsp;Free Trip<br><a href="#">know more</a></div>
+						<div class="row pad-left">
+							<div class="col-xs-6 no-right-pad input">
+								<select class="form-control styled-select"><option>add pickup point</option></select>
 							</div>
-						</div>
-
+							<div class="col-xs-6 col-xs-offset-1 no-left-pad input">
+								<select class="form-control styled-select"><option>add drop point</option></select>
+							</div>
+						</div>					
 					</div>
 					<hr>
 					<div class="row">
-						<div class="col-md-6 form-heading beba-font">Number &nbsp;of &nbsp;Seats*</div>
-						<div class="col-md-6 form-heading beba-font">Fare &nbsp;per &nbsp;Seat*</div>
+						<div class="col-sm-12 form-heading beba-font">Route*</div>
+						<div class="row pad-left">
+							<div class="col-xs-6 no-right-pad input">
+								<input type="name" placeholder="city/town name" class="form-control">
+							</div>
+							<div class="col-xs-6 col-xs-offset-1 no-pad input">
+								<input type="checkbox">Allow booking till this location
+							</div>
+						</div>
+						<div class="row pad-left">
+							<div class="col-sm-6 no-right-pad input">
+								<select class="form-control styled-select"><option>add city/town</option></select>
+							</div>
+						</div>
 					</div>
+					<hr>
 					<div class="row">
-						<div class="col-md-5"><input type="number" class="form-control" placeholder="seats available"></div>
-						<div class="col-md-5 col-md-offset-1"><input type="number" class="form-control" placeholder="enter amount"></div>
-						<div class="col-md-1 no-pad" id="rs">&#8377;</div>
+						<div class="col-sm-6 no-right-pad input change-input">
+							<div class="col-sm-12 form-heading beba-font no-left-pad">Journey &nbsp;Date*</div>
+							<div class="col-sm-12 no-pad input pull-left change-input after-pad-right">
+								<select class="form-control styled-select"><option>journey date</option></select>
+							</div>
+						</div>
+						<div class="col-sm-6 no-pad col-sm-offset-1 input change-input">
+							<div class="col-sm-12 form-heading beba-font no-left-pad" id="departure-time">Time &nbsp;of &nbsp;Departure*</div>
+							<div class="col-xs-4 no-pad after-pad-left"><select class="form-control styled-select"><option>hrs.</option></select></div>
+							<div class="col-xs-4 no-pad"><select class="form-control styled-select"><option>min.</option></select></div>
+							<div class="col-xs-4 no-pad after-pad-right"><select class="form-control styled-select"><option>AM</option></select></div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-sm-12 pad-left form-heading beba-font">Trip &nbsp;Type*</div>
+						<div class="col-sm-12 no-left-pad">
+							<div class="col-sm-9 no-right-pad">
+								<div class="col-xs-12" id="trip-type"><b>Paid Trip Posting</b><br>
+									<div class="col-sm-6 no-left-pad right trip-types"><input type="checkbox">&nbsp;Confirmed Trip<br><a href="#">know more</a></div>
+									<div class="col-sm-6 no-pad right pull-right trip-types" ><input type="checkbox">&nbsp;Travel only if full trip<br><a href="#">know more</a></div>						
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad after-pad-left">
+								<div class="col-xs-12 no-right-pad">&nbsp;<br>
+									<div class="col-xs-12 no-pad right trip-types"><input type="checkbox">&nbsp;Free Trip<br><a href="#">know more</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-xs-6 no-right-pad input">
+							<div class="col-xs-12 form-heading beba-font no-left-pad">Number &nbsp;of &nbsp;Seats*</div>
+							<div class="col-xs-12 no-pad"><input type="number" class="form-control" placeholder="seats available"></div>
+						</div>
+						<div class="col-xs-6 col-xs-offset-1 no-pad input">
+							<div class="col-xs-12 form-heading beba-font no-left-pad">Fare &nbsp;per &nbsp;Seat*</div>
+							<div class="col-xs-11 no-pad"><input type="number" class="form-control" placeholder="enter amount"></div>
+							<div class="col-xs-1 no-pad" id="rs">&#8377;</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-sm-6">
+					<hr id="col-break">
 					<div class="row">
-						<div class="col-md-12 form-heading beba-font">Vehicle &nbsp;Information*</div>
-					</div>
-					<div class="row">
-						<div class="col-md-2" id="vehicle-info">
-							<div class="row small-font">Vehicle:</div>
-							<div class="row small-font">Vehicle No.:</div>
-							<div class="row small-font">Colour:</div>
+						<div class="col-xs-12 form-heading beba-font">Vehicle &nbsp;Information*</div>
+						<div class="col-xs-12">
+							<div class="col-sm-3 small-font input-label">Vehicle:</div>
+							<div class="col-sm-9 no-pad">
+								<select class="form-control styled-select input"><option>brand</option></select>
+							</div>
 						</div>
-						<div class="col-md-10">
-							<div class="row pad-right pad-left"><select class="form-control styled-select input"><option>brand</option></select></div>
-							<div class="row pad-right pad-left" id="vehicle-number">	
+						<div class="col-sm-12">
+							<div class="col-sm-3 small-font input-label">Vehicle No.:</div>
+							<div class="col-sm-9 no-pad" id="vehicle-number">
 								<input type="text" class="form-control inline">
 								<input type="text" class="form-control inline">
 								<input type="text" class="form-control inline">
 							</div>
-							<div class="row pad-right pad-left">
+						</div>
+						<div class="col-sm-12">
+							<div class="col-sm-3 small-font input-label">Colour:</div>
+							<div class="col-sm-9 no-pad">
 								<input type="text" class="form-control input" placeholder="enter colour">
 							</div>
 						</div>
 					</div>
 					<hr>
 					<div class="row">
-						<div class="col-md-12 form-heading beba-font">Preferences</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 small-font">
+						<div class="col-sm-12 form-heading beba-font">Preferences</div>
+						<div class="col-sm-12 small-font">
 							<input type="checkbox">&nbsp;Allow only <u>Green Guests</u> to book.<br>
 							<input type="checkbox">&nbsp;Allow <u>Green Guests</u> to book for friends and families.<br>
 							<input type="checkbox">&nbsp;Allow guests to book only after I approve them<br>
@@ -130,10 +147,8 @@
 					</div>
 					<hr>
 					<div class="row">
-						<div class="col-md-12 form-heading beba-font">Additional &nbsp;Preferences</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 small-font">
+						<div class="col-sm-12 form-heading beba-font">Additional &nbsp;Preferences</div>
+						<div class="col-sm-12 small-font">
 							<input type="checkbox">&nbsp;Smoking inside car is not allowed<br>
 							<input type="checkbox">&nbsp;Drinking during the trip is not allowed
 						</div>
